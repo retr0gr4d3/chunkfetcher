@@ -1,0 +1,15 @@
+name: ChunkFetcher
+version: '${project.version}'
+main: com.chunkfetcher.ChunkFetcher
+api-version: '1.21'
+authors: [ChunkFetcher]
+description: A plugin that adds a hopper which can collect all dropped items within a chunk
+commands:
+  chunkfetcher:
+    description: Admin command to give ChunkFetcher hoppers to players
+    usage: "§c/chunkfetcher add <player> <amount>"
+    permission: chunkfetcher.admin
+permissions:
+  chunkfetcher.admin:
+    description: Allows admin commands for the ChunkFetcher plugin
+    default: op 
